@@ -10,9 +10,10 @@ const Navbar = () => {
       </div>
       <ul>
         <Link href="/">Strona Główna</Link>
-        <Link href="/oferta">Oferta</Link>
-        <Link href="/Galeria">Galeria</Link>
-        <Link href="/O-nas">O nas</Link>
+        <Link href="/Rezerwuj">Rezerwuj</Link>
+        <Link href="/Portfolio">Portfolio</Link>
+        <Link href="/Plany-i-cennik">Plany i cennik</Link>
+        <Link href="/Info">Info</Link>
         <Link href="/Kontakt">Kontakt</Link>
       </ul>
     </div>
