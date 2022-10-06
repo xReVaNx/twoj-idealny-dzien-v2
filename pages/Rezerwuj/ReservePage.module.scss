@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  margin-bottom: 100px;
+  row-gap: 50px;
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    row-gap: 50px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    .services {
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 100px;
+    }
+  }
+}

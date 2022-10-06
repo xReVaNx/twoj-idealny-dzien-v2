@@ -1,0 +1,110 @@
+@import "../../../styles/colors";
+
+.container {
+  width: 90vw;
+  height: 60vh;
+  background-color: transparent;
+  perspective: 1000px;
+
+  &:hover .flipCardInner {
+    transform: rotateY(180deg);
+  }
+
+  img {
+    width: 100% !important;
+    height: 20% !important;
+  }
+
+  .flipCardInner {
+    border: 2px solid gray;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+
+    .flipCardFront {
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      position: absolute;
+      .content {
+        width: 80% !important;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        row-gap: 20px;
+
+        h2 {
+          width: 100%;
+          min-height: 74px;
+          border-bottom: 2px solid gray;
+        }
+
+        h3 {
+          font-size: 16px;
+        }
+
+        .reserve {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          font-size: 24px;
+
+          h4 {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .flipCardBack {
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      position: absolute;
+      transform: rotateY(180deg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      row-gap: 10px;
+
+      ul {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+        text-align: center;
+
+        li {
+          width: 80%;
+          padding: 20px;
+          font-size: 16px;
+          border-bottom: 1px solid gray;
+
+          &:last-child {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 400px;
+    height: 600px;
+  }
+}

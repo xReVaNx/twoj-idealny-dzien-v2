@@ -5,6 +5,9 @@ const nextConfig = {
 };
 
 module.exports = {
+  images: {
+    domains: ["scontent-frt3-1.xx.fbcdn.net"],
+  },
   module: {
     rules: [
       {
