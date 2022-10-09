@@ -1,7 +1,12 @@
-import style from "../styles/HomePage.module.scss";
+import style from "./HomePage.module.scss";
+import WelcomeSection from "../src/Components/WelcomeSection/WelcomeSection";
 
 const HomePage = () => {
-  return <h1>HomePage</h1>;
+  return (
+    <div className={style.container}>
+      <WelcomeSection />
+    </div>
+  );
 };
 
 export default HomePage;
