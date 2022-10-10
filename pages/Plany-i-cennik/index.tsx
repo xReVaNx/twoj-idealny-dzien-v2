@@ -1,8 +1,8 @@
-import style from "./ReservePage.module.scss";
+import style from "./PlansAndPricingPage.module.scss";
 import { DUMMY_SERVICES } from "../../src/data/DUMMY_SERVICES";
 import ServiceItem from "../../src/Components/ServiceItem/ServiceItem";
 
-const ReservePage = () => {
+const PlansAndPricingPage = () => {
   return (
     <div className={style.container}>
       <h1>Nasze usługi</h1>
@@ -24,4 +24,4 @@ const ReservePage = () => {
   );
 };
 
-export default ReservePage;
+export default PlansAndPricingPage;
