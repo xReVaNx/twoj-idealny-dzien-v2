@@ -10,7 +10,7 @@ const PlansAndPricingPage = () => {
         {DUMMY_SERVICES.map((item: any) => {
           return (
             <ServiceItem
-              key={item.name}
+              key={item.id}
               name={item.name}
               img={item.img}
               time={item.time}

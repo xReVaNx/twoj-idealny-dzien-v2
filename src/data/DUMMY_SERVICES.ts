@@ -3,6 +3,7 @@ const DUMMY_IMAGE: string =
 
 export const DUMMY_SERVICES: Array<Object> = [
   {
+    id: "dekoracja-miejsca-wydarzenia",
     name: "Dekoracja miejsca wydarzenia",
     img: DUMMY_IMAGE,
     startPrice: 400,
@@ -16,10 +17,11 @@ export const DUMMY_SERVICES: Array<Object> = [
     ],
   },
   {
+    id: "przygotowanie-oswiadczyn",
     name: "Przygotowania oświadczyn",
     img: DUMMY_IMAGE,
     startPrice: 700,
   },
-  { name: "Piknik", img: DUMMY_IMAGE, startPrice: 250 },
-  { name: "Wynajem ścianki", img: DUMMY_IMAGE, startPrice: 150 },
+  { id: "piknik", name: "Piknik", img: DUMMY_IMAGE, startPrice: 250 },
+  { id: "wynajem-scianki", name: "Wynajem ścianki", img: DUMMY_IMAGE, startPrice: 150 },
 ];
